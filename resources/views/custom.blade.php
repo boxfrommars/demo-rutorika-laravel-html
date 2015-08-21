@@ -5,8 +5,8 @@
 
     {!! Form::open(['class' => 'form-horizontal']) !!}
     {!! Form::codeField('Form::codeField', 'codeField', null, ['mode' => 'html', 'theme' => 'monokai']) !!}
-    {!! Form::colorField('Form::codeField', 'colorField', null, []) !!}
-    {!! Form::geopointField('Form::geopointField', 'geopointField') !!}
+    {!! Form::colorField('Form::colorField', 'colorField', null, []) !!}
+    {!! Form::geopointField('Form::geopointField', 'geopointField', null, ['map' => ['center' => [45.04, 39], 'zoom' => 12], 'layer' => 'yandex', 'type' => 'publicMap']) !!}
     {!! Form::submitField() !!}
     {!! Form::close() !!}
 @endsection
