@@ -121,9 +121,7 @@
                 var layer;
                 var type;
 
-
                 function setPointMarker(point) {
-                    console.log(pointMarker);
                     if (!pointMarker) {
                         pointMarker = L.marker(point, {draggable: true}).addTo(map);
                         pointMarker.on('dragend', function (e) {
