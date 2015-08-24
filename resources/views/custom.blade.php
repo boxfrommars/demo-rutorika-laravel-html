@@ -14,7 +14,7 @@
 
 <style>
     /* Code Field */
-    .ace-editor {
+    .js-code {
         min-height: 300px;
     }
 

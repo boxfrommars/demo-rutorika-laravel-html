@@ -55,25 +55,21 @@
         $(document).ready(function () {
 
             // codeField
-            $('.ace-editor').each(function () {
+            $('.js-code-field').each(function () {
 
                 var $field = $(this);
-                var editor = ace.edit(this);
-                var $textarea = $field.siblings('textarea');
+                var editor = ace.edit($field.siblings('.js-code').get(0));
 
-                var mode = 'ace/mode/' + $field.data('mode');
-                var theme = $field.data('theme');
+                var mode = $field.data('mode') || 'html';
+                var theme = $field.data('theme') || 'textmate';
 
-                editor.getSession().setMode(mode);
+                editor.setTheme('ace/theme/' + theme);
+                editor.getSession().setMode('ace/mode/' + mode);
 
-                if (theme) {
-                    editor.setTheme('ace/theme/' + theme);
-                }
-
-                editor.getSession().setValue($textarea.val());
+                editor.getSession().setValue($field.val());
 
                 editor.getSession().on('change', function () {
-                    $textarea.val(editor.getSession().getValue());
+                    $field.val(editor.getSession().getValue());
                 });
             });
 
@@ -94,7 +90,7 @@
                 return value ? value.split(':') : null;
             }
 
-            $('.js-map-field').each(function () {
+            $('.js-geopoint-field').each(function () {
 
                 var $field = $(this);
                 var $map = $(this).siblings('.js-map');
