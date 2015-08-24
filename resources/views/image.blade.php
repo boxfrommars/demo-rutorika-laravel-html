@@ -5,8 +5,9 @@
 
     {!! Form::model($article, ['class' => 'form-horizontal']) !!}
     {!! Form::textField('Title', 'title') !!}
-    {!! Form::imageField('Image', 'image') !!}
+    {!! Form::imageField('Image', 'image', null, [], 'JPG or PNG') !!}
     {!! Form::textField('Something', 'something') !!}
-    {!! Form::fileField('File', 'file') !!}
+    {!! Form::fileField('File', 'file', null, [], 'PDF, DOC, DOCX <= 3Mb') !!}
+    {!! Form::textareaField('Another field', 'something2') !!}
     {!! Form::close() !!}
 @endsection

@@ -11,7 +11,13 @@
 |
 */
 
-function resource_path($filename)
+/**
+ * relative path to   re
+ *
+ * @param $filename
+ * @return string
+ */
+function public_storage_path($filename)
 {
     return trim(env('RESOURCE_PATH', 'assets/storage'), '/') . DIRECTORY_SEPARATOR . $filename;
 }
@@ -22,7 +28,7 @@ Route::get('/', function () {
 Route::get('/custom', function () {
     return view('custom');
 });
-Route::get('/image', function (){
+Route::get('/image', function () {
     $article = new \App\Entities\Article();
     $article->title = 'Test Article';
     $article->image = 'http://lorempixel.com/800/500/fashion/';

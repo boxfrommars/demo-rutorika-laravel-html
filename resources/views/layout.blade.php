@@ -7,7 +7,7 @@
 
     <title>Rutorika/Html Demo</title>
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap-3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/vendor/jquery-minicolors-2.1.12/jquery.minicolors.css">
     <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
     <link rel="stylesheet" href="/assets/vendor/jQuery-File-Upload-9.11.0/css/jquery.fileupload.css"/>
@@ -18,7 +18,7 @@
             padding-top: 50px;
         }
 
-        .upload-result-wrap {
+        .js-upload-image-container .upload-result-wrap {
             margin-bottom: 10px;
         }
 
