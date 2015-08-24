@@ -11,12 +11,26 @@
 |
 */
 
+function resource_path($filename)
+{
+    return trim(env('RESOURCE_PATH', 'assets/storage'), '/') . DIRECTORY_SEPARATOR . $filename;
+}
+
 Route::get('/', function () {
     return view('general');
 });
 Route::get('/custom', function () {
     return view('custom');
 });
+Route::get('/image', function (){
+    $article = new \App\Entities\Article();
+    $article->title = 'Test Article';
+    $article->image = 'http://lorempixel.com/800/500/fashion/';
+    $article->file = 'http://lorempixel.com/800/500/fashion/';
+    return view('image', ['article' => $article]);
+});
+
+Route::post('/upload/image', 'UploadController@image');
 
 Route::post('/', function (\Illuminate\Http\Request $request) {
 

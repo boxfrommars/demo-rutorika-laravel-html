@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.1.10 (LTS) on 2015-08-20.
+ * Generated for Laravel 5.1.10 (LTS) on 2015-08-23.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -11071,25 +11071,7 @@ namespace {
         }
         
         /**
-         * 
-         *
-         * @static 
-         */
-        public static function colorField($title, $name, $value = null, $options = array(), $help = ''){
-            return \Rutorika\Html\FormBuilder::colorField($title, $name, $value, $options, $help);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */
-        public static function geopointField($title, $name, $value = null, $options = array(), $help = ''){
-            return \Rutorika\Html\FormBuilder::geopointField($title, $name, $value, $options, $help);
-        }
-        
-        /**
-         * Code textarea field (Ace redactor will be applied to this field)
+         * Code textarea field (Ace redactor will be applied to this field).
          * 
          * available options:
          * mode : 'php'
@@ -11112,8 +11094,71 @@ namespace {
          *
          * @static 
          */
+        public static function colorField($title, $name, $value = null, $options = array(), $help = ''){
+            return \Rutorika\Html\FormBuilder::colorField($title, $name, $value, $options, $help);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function geopointField($title, $name, $value = null, $options = array(), $help = ''){
+            return \Rutorika\Html\FormBuilder::geopointField($title, $name, $value, $options, $help);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function imageUploadField($title, $name, $value = null, $options = array(), $help = ''){
+            return \Rutorika\Html\FormBuilder::imageUploadField($title, $name, $value, $options, $help);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function fileUploadField($title, $name, $value = null, $options = array(), $help = ''){
+            return \Rutorika\Html\FormBuilder::fileUploadField($title, $name, $value, $options, $help);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function imageField($title, $name, $value = null, $options = array(), $help = ''){
+            return \Rutorika\Html\FormBuilder::imageField($title, $name, $value, $options, $help);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function fileField($title, $name, $value = null, $options = array(), $help = ''){
+            return \Rutorika\Html\FormBuilder::fileField($title, $name, $value, $options, $help);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
         public static function staticField($title, $value, $help = ''){
             return \Rutorika\Html\FormBuilder::staticField($title, $value, $help);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function code($name, $value = null, $options = array()){
+            return \Rutorika\Html\FormBuilder::code($name, $value, $options);
         }
         
         /**
@@ -11132,6 +11177,24 @@ namespace {
          */
         public static function geopoint($name, $value = null, $options = array()){
             return \Rutorika\Html\FormBuilder::geopoint($name, $value, $options);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function imageUpload($name, $value = null, $options = array()){
+            return \Rutorika\Html\FormBuilder::imageUpload($name, $value, $options);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function fileUpload($name, $value = null, $options = array()){
+            return \Rutorika\Html\FormBuilder::fileUpload($name, $value, $options);
         }
         
         /**

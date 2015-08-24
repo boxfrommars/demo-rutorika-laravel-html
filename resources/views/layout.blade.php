@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Rutorika/Html Demo</title>
+
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/vendor/jquery-minicolors-2.1.12/jquery.minicolors.css">
     <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+    <link rel="stylesheet" href="/assets/vendor/jQuery-File-Upload-9.11.0/css/jquery.fileupload.css"/>
+    <link rel="stylesheet" href="/assets/vendor/magnific-popup/magnific-popup.css"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <style>
         body {
             padding-top: 50px;
+        }
+
+        .upload-result-wrap {
+            margin-bottom: 10px;
+        }
+
+        .js-upload-container .btn {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .js-upload-image-container img {
+            max-width: 100%;
+            max-height: 200px;
+
+            background-image: url(/assets/img/background-pattern.png);
+        }
+        .upload-result-wrap .form-control-static {
+            padding-top: 0; /*because button ulready increase height and space between top and bottom of text*/
+            padding-bottom: 0;
+        }
+
+        .mfp-figure:after {
+            background-image: url(/assets/img/background-pattern.png);
         }
     </style>
 </head>
@@ -28,6 +60,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="/">General Fields</a></li>
                     <li><a href="/custom">Custom Fields</a></li>
+                    <li><a href="/image">Image Fields</a></li>
                 </ul>
             </div>
         </div>
@@ -38,6 +71,7 @@
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/assets/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script> {{-- only core and sortable --}}
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="/assets/vendor/ace/src-noconflict/ace.js"></script>
     <script src="/assets/vendor/jquery-minicolors-2.1.12/jquery.minicolors.min.js"></script>
@@ -45,12 +79,20 @@
     <script src="/assets/vendor/leaflet-plugins/layer/tile/Yandex.js"></script>
     <script src="/assets/vendor/leaflet-plugins/layer/tile/Google.js"></script>
     <script src="/assets/vendor/leaflet-plugins/layer/tile/Bing.js"></script>
+    <script src="/assets/vendor/jQuery-File-Upload-9.11.0/js/jquery.iframe-transport.js"></script>
+    <script src="/assets/vendor/jQuery-File-Upload-9.11.0/js/jquery.fileupload.js"></script>
+    <script src="/assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
 
     <script src="//maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
 
     <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
 
         $(document).ready(function () {
 
@@ -84,8 +126,6 @@
             });
 
             // map
-
-
             function parsePoint(value) {
                 return value ? value.split(':') : null;
             }
@@ -206,5 +246,6 @@
 
 
     </script>
+    <script src="/assets/js/image.js"></script>
 </body>
 </html>
