@@ -12,14 +12,14 @@
 */
 
 /**
- * relative path to   re
+ * relative path to public storage
  *
  * @param $filename
  * @return string
  */
-function public_storage_path($filename)
+function public_storage_url($filename = '')
 {
-    return trim(env('RESOURCE_PATH', 'assets/storage'), '/') . DIRECTORY_SEPARATOR . $filename;
+    return implode('/', ['', config('dashboard.public_storage_path'), $filename]);
 }
 
 Route::get('/', function () {
@@ -31,7 +31,7 @@ Route::get('/custom', function () {
 Route::get('/image', function () {
     $article = new \App\Entities\Article();
     $article->title = 'Test Article';
-    $article->image = 'http://lorempixel.com/800/500/fashion/';
+    $article->image = 'dc/8c/8261f1779369b0c049a8796dc45b.png';
     $article->file = 'http://lorempixel.com/800/500/fashion/';
     return view('image', ['article' => $article]);
 });

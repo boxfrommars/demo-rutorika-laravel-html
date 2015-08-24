@@ -12,7 +12,7 @@ class UploadController extends Controller
         $file =$request->file('file');
 
         $filename = static::generateFilename($file);
-        $fileDestinationInfo = static::getDestinationInfo($filename, '/assets/storage');
+        $fileDestinationInfo = static::getDestinationInfo($filename, config('dashboard.public_storage_path'));
 
         $file->move($fileDestinationInfo['destination'] . DIRECTORY_SEPARATOR, $fileDestinationInfo['filename']);
 
@@ -40,9 +40,9 @@ class UploadController extends Controller
         $filename = implode('', array_slice($splittedFilename, 2));  // implode('', ['ef', 'gh']) = 'efgh' -- filename
 
         return [
-            'destination' => public_path() . $path . DIRECTORY_SEPARATOR . $subpath,
+            'destination' => implode(DIRECTORY_SEPARATOR, [public_path(), $path, $subpath]),
             'filename' => $filename,
-            'public_destination' => implode(DIRECTORY_SEPARATOR, [$path, $subpath, $filename]),
+            'public_destination' => implode(DIRECTORY_SEPARATOR, ['', $path, $subpath, $filename]),
             'assets_destination' => implode(DIRECTORY_SEPARATOR, [$subpath, $filename]),
         ];
     }
