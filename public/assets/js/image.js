@@ -31,7 +31,8 @@ $('.js-uploader-field').each(function () {
 $('.js-upload-remove').on('click', function (e) {
   e.preventDefault();
   var $container = $(this).parents('.js-upload-container');
-  $container.find('.input:text').val('');
+
+  $container.siblings('.js-uploader-field').val('');
   $container.find('.upload-result').attr('href', '');
   $container.trigger('removed', [$container]);
 });

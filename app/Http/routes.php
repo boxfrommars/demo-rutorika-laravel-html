@@ -31,7 +31,7 @@ Route::get('/custom', function () {
 Route::get('/image', function () {
     $article = new \App\Entities\Article();
     $article->title = 'Test Article';
-    $article->image = 'dc/8c/8261f1779369b0c049a8796dc45b.png';
+    $article->image = '98/8d/89194b622bc545acd7440b6708ce.png';
     $article->file = 'http://lorempixel.com/800/500/fashion/';
     return view('image', ['article' => $article]);
 });

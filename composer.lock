@@ -948,7 +948,7 @@
             "source": {
                 "type": "git",
                 "url": "../rutorika-laravel-html",
-                "reference": "532fd3cb54a09fe8495af4fa1b2eb098d4d60a6d"
+                "reference": "2e5c837b6a8b5c48c806ecc78cc7713da68571e1"
             },
             "require": {
                 "illuminate/support": "5.*",
@@ -978,7 +978,7 @@
                 }
             ],
             "description": "Bootstrapped Forms",
-            "time": "2015-08-24 12:38:28"
+            "time": "2015-08-24 23:39:25"
         },
         {
             "name": "swiftmailer/swiftmailer",
