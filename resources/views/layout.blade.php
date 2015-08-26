@@ -12,8 +12,15 @@
     <link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
     <link rel="stylesheet" href="/assets/vendor/jQuery-File-Upload-9.11.0/css/jquery.fileupload.css"/>
     <link rel="stylesheet" href="/assets/vendor/magnific-popup/magnific-popup.css"/>
+    <link rel="stylesheet" href="/assets/vendor/select2/css/select2.min.css"/>
+    <link rel="stylesheet" href="/assets/vendor/select2/css/select2-bootstrap.min.css"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <style>
+
+        html, body {
+            height: 100%;
+        }
+
         body {
             padding-top: 50px;
         }
@@ -41,6 +48,10 @@
         .mfp-figure:after {
             background-image: url(/assets/img/background-pattern.png);
         }
+
+        .select2 {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +72,7 @@
                     <li><a href="/">General Fields</a></li>
                     <li><a href="/custom">Custom Fields</a></li>
                     <li><a href="/image">Image Fields</a></li>
+                    <li><a href="/select2">Select2</a></li>
                 </ul>
             </div>
         </div>
@@ -82,6 +94,7 @@
     <script src="/assets/vendor/jQuery-File-Upload-9.11.0/js/jquery.iframe-transport.js"></script>
     <script src="/assets/vendor/jQuery-File-Upload-9.11.0/js/jquery.fileupload.js"></script>
     <script src="/assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="/assets/vendor/select2/js/select2.js"></script>
 
     <script src="//maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
@@ -247,5 +260,6 @@
 
     </script>
     <script src="/assets/js/image.js"></script>
+    <script src="/assets/js/select2.js"></script>
 </body>
 </html>

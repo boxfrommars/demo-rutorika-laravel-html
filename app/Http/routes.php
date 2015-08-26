@@ -11,17 +11,6 @@
 |
 */
 
-/**
- * relative path to public storage
- *
- * @param $filename
- * @return string
- */
-function public_storage_url($filename = '')
-{
-    return implode('/', ['', config('dashboard.public_storage_path'), $filename]);
-}
-
 Route::get('/', function () {
     return view('general');
 });
@@ -31,12 +20,17 @@ Route::get('/custom', function () {
 Route::get('/image', function () {
     $article = new \App\Entities\Article();
     $article->title = 'Test Article';
-    $article->image = '98/8d/89194b622bc545acd7440b6708ce.png';
-    $article->file = 'http://lorempixel.com/800/500/fashion/';
+    $article->image = '61/26/fd67890c900ab9ac41ec644db19a.png';
+    $article->file = '61/26/fd67890c900ab9ac41ec644db19a.png';
     return view('image', ['article' => $article]);
 });
 
-Route::post('/upload/image', 'UploadController@image');
+
+Route::get('/select2', function () {
+    return view('select2', []);
+});
+
+Route::post('/upload/image', '\Rutorika\Html\Http\UploadController@upload');
 
 Route::post('/', function (\Illuminate\Http\Request $request) {
 
