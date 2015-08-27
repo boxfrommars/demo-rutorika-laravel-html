@@ -8,7 +8,7 @@ $('.js-uploader-field').each(function () {
 
   $container.find('input:file').fileupload({
     dataType: 'json',
-    url: $field.data('url') || '/upload/image',
+    url: $field.data('url') || '/upload',
     paramName: 'file',
     formData: [{
       name: 'type',

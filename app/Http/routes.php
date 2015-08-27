@@ -30,7 +30,29 @@ Route::get('/select2', function () {
     return view('select2', []);
 });
 
-Route::post('/upload/image', '\Rutorika\Html\Http\UploadController@upload');
+$select2Data = [
+    ['id' => 1, 'text' => 'The Sweetness at the Bottom of the Pie'],
+    ['id' => 2, 'text' => 'The Weed That Strings the Hangman\'s Bag'],
+    ['id' => 3, 'text' => 'A Red Herring Without Mustard'],
+    ['id' => 4, 'text' => 'I Am Half-Sick of Shadows'],
+    ['id' => 5, 'text' => 'Speaking from Among the Bones'],
+    ['id' => 6, 'text' => 'The Dead in Their Vaulted Arches'],
+    ['id' => 7, 'text' => 'As Chimney Sweepers Come to Dust'],
+];
+
+Route::get('/select2/data', function () use ($select2Data) {
+    return ['results' => $select2Data];
+});
+
+Route::get('/select2/data/init', function (\Illuminate\Http\Request $request) use ($select2Data) {
+    $value = (array) $request->get('value', []);
+    $results = array_filter($select2Data, function ($item) use ($value) {
+        return in_array($item['id'], $value);
+    });
+    return ['results' => $results];
+});
+
+Route::post('/upload', '\Rutorika\Html\Http\UploadController@upload');
 
 Route::post('/', function (\Illuminate\Http\Request $request) {
 

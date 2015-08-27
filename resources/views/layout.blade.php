@@ -94,7 +94,7 @@
     <script src="/assets/vendor/jQuery-File-Upload-9.11.0/js/jquery.iframe-transport.js"></script>
     <script src="/assets/vendor/jQuery-File-Upload-9.11.0/js/jquery.fileupload.js"></script>
     <script src="/assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
-    <script src="/assets/vendor/select2/js/select2.js"></script>
+    <script src="/assets/vendor/select2/js/select2.full.js"></script>
 
     <script src="//maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
