@@ -40,8 +40,16 @@ $select2Data = [
     ['id' => 7, 'text' => 'As Chimney Sweepers Come to Dust'],
 ];
 
-Route::get('/select2/data', function () use ($select2Data) {
-    return ['results' => $select2Data];
+Route::get('/select2/data', function (\Illuminate\Http\Request $request) use ($select2Data) {
+    $query = $request->get('q');
+    if (!$query) {
+        $results = $select2Data;
+    } else {
+        $results = array_filter($select2Data, function ($item) use ($query) {
+            return strpos(mb_strtolower($item['text']), mb_strtolower($query)) === 0;
+        });
+    }
+    return ['results' => array_values($results)];
 });
 
 Route::get('/select2/data/init', function (\Illuminate\Http\Request $request) use ($select2Data) {
