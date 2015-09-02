@@ -52,13 +52,16 @@ Route::get('/select2/data', function (\Illuminate\Http\Request $request) use ($s
     return ['results' => array_values($results)];
 });
 
-Route::get('/select2/data/init', function (\Illuminate\Http\Request $request) use ($select2Data) {
-    $value = (array) $request->get('value', []);
-    $results = array_filter($select2Data, function ($item) use ($value) {
-        return in_array($item['id'], $value);
-    });
-    return ['results' => $results];
-});
+//Route::get('/select2/data/init', function (\Illuminate\Http\Request $request) use ($select2Data) {
+//    $value = (array) $request->get('value', []);
+//    $results = array_filter($select2Data, function ($item) use ($value) {
+//        return in_array($item['id'], $value);
+//    });
+//    return ['results' => $results];
+//});
+
+Route::get('/select2/data', 'Select2Controller@select2search');
+Route::get('/select2/data/init', 'Select2Controller@select2searchInit');
 
 Route::post('/upload', '\Rutorika\Html\Http\UploadController@upload');
 
