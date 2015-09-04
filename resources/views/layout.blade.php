@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/assets/vendor/select2/css/select2.min.css"/>
     <link rel="stylesheet" href="/assets/vendor/select2/css/select2-bootstrap.min.css"/>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <style>
 
@@ -105,6 +106,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="/assets/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script> {{-- only core and sortable --}}
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="/assets/vendor/momentjs/moment-with-locales.min.js"></script>
     <script src="/assets/vendor/ace/src-noconflict/ace.js"></script>
     <script src="/assets/vendor/jquery-minicolors-2.1.12/jquery.minicolors.min.js"></script>
     <script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
@@ -115,6 +117,7 @@
     <script src="/assets/vendor/jQuery-File-Upload-9.11.0/js/jquery.fileupload.js"></script>
     <script src="/assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
     <script src="/assets/vendor/select2/js/select2.full.js"></script>
+    <script src="/assets/vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
 
     <script src="//maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
