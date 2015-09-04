@@ -141,6 +141,7 @@ return [
          * Vendor Service Providers
          */
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
         Rutorika\Html\HtmlServiceProvider::class,
 
         /*

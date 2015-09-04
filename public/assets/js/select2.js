@@ -5,27 +5,27 @@ $('.select2').each(function () {
   var value = $select.data('value');
   var url = $select.data('ajax--url');
 
+  // if async, selected, and no option with selected value exists -- then prefetching selected item from server
+  // and add fetched option to select.
   if (url && value && !currentValue) {
     var request = $.ajax({
       url: url + '/init',
       data: {
-        value: value
+        ids: value
       }
     });
 
     request.then(function (response) {
-      _.each(response.results, function (result) {
-        console.log(result);
-
+      response.results.forEach(function (result) {
         var $option = $('<option>')
-          .attr('value', result.id)
           .text(result.text)
+          .attr('value', result.id)
           .prop('selected', true);
 
         $select.prepend($option);
-
-        initSelect2($select);
       });
+
+      initSelect2($select);
     });
 
   } else {

@@ -1,1 +1,7 @@
 [  32984]   WARN - om.intellij.util.ProfilingUtil - Profiling agent is not enabled. Add -agentlib:yjpagent to idea.vmoptions if necessary to profile IDEA. 
+Java HotSpot(TM) Server VM warning: INFO: os::commit_memory(0x771af000, 12288, 0) failed; error='Невозможно выделить память' (errno=12)
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 12288 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# /home/xu/java_error_in_WEBIDE_20492.log

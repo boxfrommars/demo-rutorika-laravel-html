@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/assets/vendor/magnific-popup/magnific-popup.css"/>
     <link rel="stylesheet" href="/assets/vendor/select2/css/select2.min.css"/>
     <link rel="stylesheet" href="/assets/vendor/select2/css/select2-bootstrap.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <style>
 
@@ -52,6 +53,23 @@
         .select2 {
             width: 100%;
         }
+
+        /* Code Field */
+        .js-code {
+            min-height: 300px;
+        }
+
+        .js-map {
+            width: 100%;
+            height:400px;
+        }
+
+        .code {
+            font-family: monospace;
+            white-space: pre;
+            overflow-x: scroll;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
@@ -70,9 +88,11 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/">General Fields</a></li>
-                    <li><a href="/custom">Custom Fields</a></li>
-                    <li><a href="/image">Image Fields</a></li>
-                    <li><a href="/select2">Select2</a></li>
+                    <li><a href="/color">Color Fields</a></li>
+                    <li><a href="/maps">Map Fields</a></li>
+                    <li><a href="/upload">Upload Fields</a></li>
+                    <li><a href="/select2">Select2 Fields</a></li>
+                    <li><a href="/code">Code Fields</a></li>
                 </ul>
             </div>
         </div>
@@ -98,6 +118,8 @@
 
     <script src="//maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
 
 
     <script>
@@ -258,6 +280,13 @@
         });
 
 
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+        });
     </script>
     <script src="/assets/js/image.js"></script>
     <script src="/assets/js/select2.js"></script>

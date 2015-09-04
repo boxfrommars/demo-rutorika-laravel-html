@@ -17,7 +17,7 @@ class Select2ableSeeder extends Seeder
 
         for ($i = 0; $i < 100; $i++) {
             $select2able = new \App\Entities\Select2able();
-            $select2able->title = $faker->title;
+            $select2able->title = $faker->name;
             $select2able->save();
         }
     }
