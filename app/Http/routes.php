@@ -33,8 +33,11 @@ Route::get('/date', function () {
 Route::get('/upload', function () {
     $article = new \App\Entities\Article();
     $article->title = 'Test Article';
-    $article->image = '61/26/fd67890c900ab9ac41ec644db19a.png';
-    $article->file = '61/26/fd67890c900ab9ac41ec644db19a.png';
+    $article->image = 'e4/81/bc974a89ae98787412fb74158b0e.png';
+    $article->file = 'e4/81/bc974a89ae98787412fb74158b0e.png';
+
+    $article->imageHelp = '62/2e/0cae2ad0998d522117312b590583.jpg';
+    $article->fileHelp = '62/2e/0cae2ad0998d522117312b590583.jpg';
     return view('upload', ['article' => $article]);
 });
 
