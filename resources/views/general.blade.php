@@ -14,7 +14,7 @@
 
     <h2 class="page-header">Vertical</h2>
 
-    {!! Form::open(['theme' => 'bootstrap']) !!}
+    {!! Form::open(['theme' => 'bootstrap-vertical']) !!}
     {!! Form::textField('Form::textField', 'textField', null, [], 'Should contains letters and numbers') !!}
     {!! Form::textareaField('Form::textareaField', 'textareaField') !!}
     {!! Form::checkboxField('Form::checkboxField', 'checkboxField') !!}

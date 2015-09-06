@@ -1460,12 +1460,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/boxfrommars/rutorika-laravel-html.git",
-                "reference": "127ca92327ad7411b59e7a4738e47fadd8ed6274"
+                "reference": "2e93807ce6dbd9b20b5424b291673ae84a4a8bae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/boxfrommars/rutorika-laravel-html/zipball/127ca92327ad7411b59e7a4738e47fadd8ed6274",
-                "reference": "127ca92327ad7411b59e7a4738e47fadd8ed6274",
+                "url": "https://api.github.com/repos/boxfrommars/rutorika-laravel-html/zipball/2e93807ce6dbd9b20b5424b291673ae84a4a8bae",
+                "reference": "2e93807ce6dbd9b20b5424b291673ae84a4a8bae",
                 "shasum": ""
             },
             "require": {
@@ -1500,7 +1500,7 @@
                 "source": "https://github.com/boxfrommars/rutorika-laravel-html/tree/master",
                 "issues": "https://github.com/boxfrommars/rutorika-laravel-html/issues"
             },
-            "time": "2015-09-06 09:58:00"
+            "time": "2015-09-06 17:12:52"
         },
         {
             "name": "swiftmailer/swiftmailer",
