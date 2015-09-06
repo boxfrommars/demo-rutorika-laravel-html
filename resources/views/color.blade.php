@@ -12,7 +12,7 @@
     {!! Form::close() !!}
 
     <h4>Code</h4>
-    <div class="code css">@{!! Form::open() !!}
+    <div class="code">@{!! Form::open() !!}
 
 @{!! Form::colorField('Default (hue)', 'colorField', null, []) !!}
 @{!! Form::colorField('Brightness', 'brightness', null, ['minicolors' => ['control' => 'brightness', 'defaultValue' => '#ff88ff']]) !!}

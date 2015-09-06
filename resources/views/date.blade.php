@@ -15,7 +15,7 @@
     {!! Form::close() !!}
 
     <h4>Code</h4>
-    <div class="code css">@{!! Form::open() !!}
+    <div class="code">@{!! Form::open() !!}
 
 @{!! Form::datetimeField('Date and Time', 'datetime') !!}
 @{!! Form::dateField('Date', 'date') !!}

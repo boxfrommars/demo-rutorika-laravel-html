@@ -37,7 +37,7 @@
     {!! Form::close() !!}
 
     <h4>Code</h4>
-    <div class="code css">@{!! Form::open() !!}
+    <div class="code">@{!! Form::open() !!}
 
 @{!! Form::textField('Form::textField', 'textField') !!}
 @{!! Form::textField('Form::textField', 'textField', null, [], 'Should contains letters and numbers') !!}

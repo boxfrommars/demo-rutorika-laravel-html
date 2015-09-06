@@ -15,7 +15,7 @@
     {!! Form::geopointField('OSM Custom (Stamen.Watercolor)', 'geopointField', null, ['map' => ['zoom' => 6], 'layer' => 'osm', 'type' => 'http://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png']) !!}
     {!! Form::close() !!}
 <h4>Code</h4>
-<div class="code css">@{!! Form::open() !!}
+<div class="code">@{!! Form::open() !!}
 
 @{!! Form::geopointField('Yandex public', 'yandex-public', null, ['map' => ['center' => [45.04, 39], 'zoom' => 12], 'layer' => 'yandex', 'type' => 'publicMap']) !!}
 @{!! Form::geopointField('Google hybrid', 'google-hybrid', null, ['map' => ['center' => [45.04, 39], 'zoom' => 10], 'layer' => 'google', 'type' => 'HYBRID']) !!}

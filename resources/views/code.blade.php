@@ -132,7 +132,7 @@ FLUSH PRIVILEGES;
 
 
     <h4>Code</h4>
-    <div class="code css">@{!! Form::open() !!}
+    <div class="code">@{!! Form::open() !!}
 
 @{!! Form::codeField('HTML (default), monokai theme', 'code-field', null, ['theme' => 'monokai']) !!}
 @{!! Form::codeField('Javascript, default theme', 'code-field-js', 'Code there...', ['mode' => 'javascript']) !!}
