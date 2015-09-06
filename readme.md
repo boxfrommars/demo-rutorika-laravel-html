@@ -5,6 +5,7 @@ xu@calypso:~$ cd demo-rutorika-laravel-html/
 xu@calypso:~$ composer install
 xu@calypso:~$ chmod a+rw storage -R
 xu@calypso:~$ chmod a+rw bootstrap/cache -R
+xu@calypso:~$ chmod a+rw bpublic/storage -R
 
 // database creation
 mysql> CREATE USER 'demohtml'@'localhost' IDENTIFIED BY 'demohtml';

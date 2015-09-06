@@ -53,7 +53,8 @@
         <div class="row">
             <div class="col-md-2 sidebar">
                 <ul class="nav nav-pills nav-stacked" id="navigation">
-                    <li><a href="/">General Fields</a></li>
+                    <li><a href="/">All</a></li>
+                    <li><a href="/general">General Fields</a></li>
                     <li><a href="/color">Color Fields</a></li>
                     <li><a href="/maps">Map Fields</a></li>
                     <li><a href="/upload-fields">Upload Fields</a></li>

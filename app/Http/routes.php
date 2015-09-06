@@ -12,6 +12,14 @@
 */
 
 Route::get('/', function () {
+    return view('all');
+});
+
+Route::post('/', function () {
+
+});
+
+Route::get('/general', function () {
     return view('general');
 });
 Route::get('/color', function () {
@@ -50,7 +58,7 @@ Route::get('/select2/data/init', 'Select2Controller@select2searchInit');
 
 Route::post('/upload', '\Rutorika\Html\Http\UploadController@upload');
 
-Route::post('/', function (\Illuminate\Http\Request $request) {
+Route::post('/general', function (\Illuminate\Http\Request $request) {
 
     $validator = Validator::make($request->all(), [
         'textField' => 'required',
@@ -59,8 +67,36 @@ Route::post('/', function (\Illuminate\Http\Request $request) {
         'checkboxField' => 'required',
         'numberField' => 'required',
         'selectField' => 'required',
-        'staticField' => 'required',
-        'submitField' => 'required',
+    ]);
+
+    if ($validator->fails()) {
+        return redirect('/')
+            ->withErrors($validator)
+            ->withInput();
+    } else {
+        return redirect('/');
+    }
+});
+
+Route::post('/', function (\Illuminate\Http\Request $request) {
+
+    $validator = Validator::make($request->all(), [
+        'text' => 'required',
+        'textarea' => 'required',
+        'checkbox' => 'required',
+        'number' => 'required',
+        'select' => 'required',
+
+        'image' => 'required',
+        'file' => 'required',
+        'code' => 'required',
+        'color' => 'required',
+        'date' => 'required',
+        'time' => 'required',
+        'datetime' => 'required',
+        'placemark' => 'required',
+        'select2' => 'required',
+        'select2-multiple' => 'required',
     ]);
 
     if ($validator->fails()) {
