@@ -3,7 +3,8 @@
 xu@calypso:~$ git clone git@github.com:boxfrommars/demo-rutorika-laravel-html.git
 xu@calypso:~$ cd demo-rutorika-laravel-html/
 xu@calypso:~$ composer install
-xu@calypso:~$ chmod a+rw app/storage -R
+xu@calypso:~$ chmod a+rw storage -R
+xu@calypso:~$ chmod a+rw bootstrap/cache -R
 
 // database creation
 mysql> CREATE USER 'demohtml'@'localhost' IDENTIFIED BY 'demohtml';
