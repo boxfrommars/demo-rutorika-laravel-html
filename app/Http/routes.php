@@ -30,7 +30,7 @@ Route::get('/date', function () {
     return view('date');
 });
 
-Route::get('/upload', function () {
+Route::get('/upload-fields', function () {
     $article = new \App\Entities\Article();
     $article->title = 'Test Article';
     $article->image = 'e4/81/bc974a89ae98787412fb74158b0e.png';

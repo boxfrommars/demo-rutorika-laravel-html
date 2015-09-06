@@ -56,7 +56,7 @@
                     <li><a href="/">General Fields</a></li>
                     <li><a href="/color">Color Fields</a></li>
                     <li><a href="/maps">Map Fields</a></li>
-                    <li><a href="/upload">Upload Fields</a></li>
+                    <li><a href="/upload-fields">Upload Fields</a></li>
                     <li><a href="/select2">Select2 Fields</a></li>
                     <li><a href="/code">Code Fields</a></li>
                     <li><a href="/date">Date Fields</a></li>
