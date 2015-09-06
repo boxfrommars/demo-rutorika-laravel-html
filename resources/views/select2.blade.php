@@ -3,7 +3,7 @@
 @section('content')
     <h2 class="page-header">Select2 fields</h2>
 
-    {!! Form::open(['class' => 'form-horizontal']) !!}
+    {!! Form::open() !!}
 
     {!! Form::select2Field('Select2', 'select2', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.']) !!}
     {!! Form::select2Field('Select2 Multiple', 'select2-multiple', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.'], [16, 23], ['multiple' => true]) !!}
@@ -18,7 +18,7 @@
 
 
 <h4>Code</h4>
-<div class="code">@{!! Form::open(['class' => 'form-horizontal']) !!}
+<div class="code">@{!! Form::open() !!}
 
 @{!! Form::select2Field('Select2', 'select2', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.']) !!}
 @{!! Form::select2Field('Select2 Multiple', 'select2-multiple', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.'], [16, 23], ['multiple' => true]) !!}

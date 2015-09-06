@@ -3,10 +3,10 @@
 @section('content')
     <h2 class="page-header">Code fields</h2>
 
-    {!! Form::open(['class' => 'form-horizontal']) !!}
+    {!! Form::open() !!}
 
-    {!! Form::codeField('HTML, monokai theme', 'codeField', null, ['mode' => 'html', 'theme' => 'monokai']) !!}
-    {!! Form::codeField('Javascript, default theme', 'codeField', '
+    {!! Form::codeField('HTML (default), monokai theme', 'code-field', null, ['theme' => 'monokai']) !!}
+    {!! Form::codeField('Javascript, default theme', 'code-field-js', '
 $(\'.select2\').each(function () {
   var $select = $(this);
 
@@ -51,7 +51,7 @@ $(\'.select2\').each(function () {
 
     ', ['mode' => 'javascript']) !!}
 
-    {!! Form::codeField('PHP, chaos theme', 'codeField', '
+    {!! Form::codeField('PHP, chaos theme', 'code-field-php', '
 &lt;?php
 /*
 |--------------------------------------------------------------------------
@@ -120,7 +120,7 @@ Route::post(\'/\', function (\\Illuminate\\Http\\Request \$request) {
     ', ['mode' => 'php', 'theme' => 'chaos']) !!}
 
 
-    {!! Form::codeField('MySQL, github theme', 'codeField', '
+    {!! Form::codeField('MySQL, github theme', 'code-field-mysql', '
 CREATE USER \'demohtml\'@\'localhost\' IDENTIFIED BY \'demohtml\';
 CREATE DATABASE demohtml;
 GRANT ALL PRIVILEGES ON demohtml . * TO \'demohtml\'@\'localhost\';
@@ -128,4 +128,18 @@ FLUSH PRIVILEGES;
     ', ['mode' => 'mysql', 'theme' => 'github']) !!}
 
     {!! Form::close() !!}
+
+
+
+    <h4>Code</h4>
+    <div class="code">@{!! Form::open() !!}
+
+@{!! Form::codeField('HTML (default), monokai theme', 'code-field', null, ['theme' => 'monokai']) !!}
+@{!! Form::codeField('Javascript, default theme', 'code-field-js', 'Code there...', ['mode' => 'javascript']) !!}
+@{!! Form::codeField('PHP, chaos theme', 'code-field-php', 'Code there...', ['mode' => 'php', 'theme' => 'chaos']) !!}
+@{!! Form::codeField('MySQL, github theme', 'code-field-mysql', 'code there...', ['mode' => 'mysql', 'theme' => 'github']) !!}
+
+@{!! Form::submitField() !!}
+@{!! Form::close() !!}
+</div>
 @endsection

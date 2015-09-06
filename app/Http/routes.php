@@ -26,6 +26,10 @@ Route::get('/code', function () {
     return view('code');
 });
 
+Route::get('/date', function () {
+    return view('date');
+});
+
 Route::get('/upload', function () {
     $article = new \App\Entities\Article();
     $article->title = 'Test Article';

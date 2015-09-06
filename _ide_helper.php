@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.1.12 (LTS) on 2015-09-02.
+ * Generated for Laravel 5.1.16 (LTS) on 2015-09-05.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -12055,6 +12055,60 @@ namespace {
          */
         public static function select2Field($title, $name, $list = array(), $selected = null, $options = array(), $help = ''){
             return \Rutorika\Html\FormBuilder::select2Field($title, $name, $list, $selected, $options, $help);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function datetimeField($title, $name, $value = null, $options = array(), $help = ''){
+            return \Rutorika\Html\FormBuilder::datetimeField($title, $name, $value, $options, $help);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function dateField($title, $name, $value = null, $options = array(), $help = ''){
+            return \Rutorika\Html\FormBuilder::dateField($title, $name, $value, $options, $help);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function timeField($title, $name, $value = null, $options = array(), $help = ''){
+            return \Rutorika\Html\FormBuilder::timeField($title, $name, $value, $options, $help);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function datetimePicker($name, $value = null, $options = array()){
+            return \Rutorika\Html\FormBuilder::datetimePicker($name, $value, $options);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function datePicker($name, $value = null, $options = array()){
+            return \Rutorika\Html\FormBuilder::datePicker($name, $value, $options);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function timePicker($name, $value = null, $options = array()){
+            return \Rutorika\Html\FormBuilder::timePicker($name, $value, $options);
         }
         
         /**

@@ -3,7 +3,7 @@
 @section('content')
     <h2 class="page-header">Color fields</h2>
 
-    {!! Form::open(['class' => 'form-horizontal']) !!}
+    {!! Form::open() !!}
     {!! Form::colorField('Default (hue)', 'colorField', null, []) !!}
     {!! Form::colorField('Brightness', 'brightness', null, ['minicolors' => ['control' => 'brightness', 'defaultValue' => '#ff88ff']]) !!}
     {!! Form::colorField('Saturation', 'saturation', null, ['minicolors' => ['control' => 'saturation']]) !!}
@@ -12,7 +12,7 @@
     {!! Form::close() !!}
 
     <h4>Code</h4>
-    <div class="code">@{!! Form::open(['class' => 'form-horizontal']) !!}
+    <div class="code">@{!! Form::open() !!}
 
 @{!! Form::colorField('Default (hue)', 'colorField', null, []) !!}
 @{!! Form::colorField('Brightness', 'brightness', null, ['minicolors' => ['control' => 'brightness', 'defaultValue' => '#ff88ff']]) !!}
