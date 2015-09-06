@@ -2,7 +2,7 @@
 ```bash
 xu@calypso:~$ git clone git@github.com:boxfrommars/demo-rutorika-laravel-html.git
 xu@calypso:~$ cd demo-rutorika-laravel-html/
-xu@calypso:~$ composer update
+xu@calypso:~$ composer install
 xu@calypso:~$ chmod a+rw app/storage -R
 
 // database creation
