@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-    <h2 class="page-header">General fields wrapped</h2>
+    <h2 class="page-header">General fields</h2>
 
     {!! Form::open() !!}
     {!! Form::textField('Form::textField', 'textField', null, [], 'Should contains letters and numbers') !!}

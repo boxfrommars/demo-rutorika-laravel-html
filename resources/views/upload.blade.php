@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-    <h2 class="page-header">Image fields</h2>
+    <h2 class="page-header">Upload fields</h2>
 
     {!! Form::model($article) !!}
     {!! Form::imageField('Image upload', 'image') !!}

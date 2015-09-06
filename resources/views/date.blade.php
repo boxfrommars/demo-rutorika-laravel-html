@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-    <h2 class="page-header">Date fields</h2>
+    <h2 class="page-header">Date and Time fields</h2>
 
     {!! Form::open() !!}
 

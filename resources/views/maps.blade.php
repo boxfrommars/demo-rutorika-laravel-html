@@ -5,7 +5,7 @@
     <script src="//maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
-    <h2 class="page-header">Custom fields</h2>
+    <h2 class="page-header">Map fields</h2>
 
     {!! Form::open() !!}
     {!! Form::geopointField('Yandex public', 'yandex-public', null, ['map' => ['center' => [45.04, 39], 'zoom' => 12], 'layer' => 'yandex', 'type' => 'publicMap']) !!}
