@@ -9,6 +9,8 @@
 
     {!! Form::imageField('Image upload with help', 'imageHelp', null, [], 'JPG or PNG') !!}
     {!! Form::fileField('File upload with help', 'fileHelp', null, [], 'PDF, DOC, DOCX <= 3Mb') !!}
+
+    {!! Form::submitField() !!}
     {!! Form::close() !!}
 
     <h4>Code</h4>
