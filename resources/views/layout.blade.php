@@ -77,6 +77,13 @@
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
+    </script>
+
+    <script src="/vendor/rutorika/form/build/js/vendor.js"></script>
+    <script src="/vendor/rutorika/form/build/js/scripts.js"></script>
+
+    <script src="/assets/highlight.pack.js"></script>
+    <script>
         $(document).ready(function() {
             // navigation
             $('#navigation').find('[href="' + location.pathname +'"]').parent('li').addClass('active');
@@ -87,13 +94,6 @@
             });
         });
     </script>
-
-    <script src="/vendor/rutorika/form/build/js/vendor.js"></script>
-    <script src="/vendor/rutorika/form/build/js/scripts.js"></script>
-
-
-    <script src="/assets/highlight.pack.js"></script>
-
 
     <script>
     </script>

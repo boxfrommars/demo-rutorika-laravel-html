@@ -32,7 +32,7 @@
 
     <h4>Code</h4>
     <div class="code">@{!! Form::open() !!}
-        
+
 @{!! Form::textField('Text', 'text') !!}
 @{!! Form::checkboxField('Checkbox', 'checkbox') !!}
 @{!! Form::numberField('Number', 'number') !!}
