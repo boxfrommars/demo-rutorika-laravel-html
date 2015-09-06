@@ -14,7 +14,7 @@
     {!! Form::close() !!}
 
     <h4>Code</h4>
-    <div class="code">@{!! Form::model($article) !!}
+    <div class="code css">@{!! Form::model($article) !!}
 
 @{!! Form::imageField('Image upload', 'image', null, [], 'JPG or PNG') !!}
 @{!! Form::fileField('File upload', 'file', null, [], 'PDF, DOC, DOCX <= 3Mb') !!}

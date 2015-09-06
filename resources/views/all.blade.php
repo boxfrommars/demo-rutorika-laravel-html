@@ -31,7 +31,7 @@
     {!! Form::close() !!}
 
     <h4>Code</h4>
-    <div class="code">@{!! Form::open() !!}
+    <div class="code css">@{!! Form::open() !!}
 
 @{!! Form::textField('Text', 'text') !!}
 @{!! Form::checkboxField('Checkbox', 'checkbox') !!}
