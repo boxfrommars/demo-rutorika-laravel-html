@@ -21,7 +21,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "../rutorika-laravel-html"
+            "url": "https://github.com/boxfrommars/rutorika-laravel-html"
         }
     ],
     "autoload": {

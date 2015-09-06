@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "431bd646a0a8be09e952d1a9d43323c7",
+    "hash": "4c0d92571c17263d8b2af78455210f90",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -1459,8 +1459,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "../rutorika-laravel-html",
-                "reference": "a0abb2d71c7c915f9a40b4513d8ed64cc5c18c30"
+                "url": "https://github.com/boxfrommars/rutorika-laravel-html.git",
+                "reference": "127ca92327ad7411b59e7a4738e47fadd8ed6274"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boxfrommars/rutorika-laravel-html/zipball/127ca92327ad7411b59e7a4738e47fadd8ed6274",
+                "reference": "127ca92327ad7411b59e7a4738e47fadd8ed6274",
+                "shasum": ""
             },
             "require": {
                 "illuminate/support": "5.*",
@@ -1490,7 +1496,11 @@
                 }
             ],
             "description": "Bootstrapped Forms",
-            "time": "2015-09-06 09:49:55"
+            "support": {
+                "source": "https://github.com/boxfrommars/rutorika-laravel-html/tree/master",
+                "issues": "https://github.com/boxfrommars/rutorika-laravel-html/issues"
+            },
+            "time": "2015-09-06 09:58:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
