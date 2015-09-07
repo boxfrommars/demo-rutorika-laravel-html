@@ -8,7 +8,9 @@
     {!! Form::fileField('File upload', 'file') !!}
 
     {!! Form::imageField('Image upload with help', 'imageHelp', null, [], 'JPG or PNG') !!}
-    {!! Form::fileField('File upload with help', 'fileHelp', null, [], 'PDF, DOC, DOCX <= 3Mb') !!}
+    {!! Form::fileField('File upload with help', 'fileHelp', null, ['type' => 'document'], 'PDF, DOC, DOCX <= 3Mb') !!}
+
+    {!! Form::audioField('Audio', 'audio', null, ['type' => 'audio'])  !!}
 
     {!! Form::submitField() !!}
     {!! Form::close() !!}

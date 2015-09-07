@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.1.16 (LTS) on 2015-09-05.
+ * Generated for Laravel 5.1.16 (LTS) on 2015-09-06.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -11906,6 +11906,17 @@ namespace {
         /**
          * 
          *
+         * @param array $options
+         * @return string 
+         * @static 
+         */
+        public static function open($options = array()){
+            return \Rutorika\Html\FormBuilder::open($options);
+        }
+        
+        /**
+         * 
+         *
          * @static 
          */
         public static function textField($title, $name, $value = null, $options = array(), $help = ''){
@@ -12028,6 +12039,15 @@ namespace {
          */
         public static function imageField($title, $name, $value = null, $options = array(), $help = ''){
             return \Rutorika\Html\FormBuilder::imageField($title, $name, $value, $options, $help);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function audioField($title, $name, $value = null, $options = array(), $help = ''){
+            return \Rutorika\Html\FormBuilder::audioField($title, $name, $value, $options, $help);
         }
         
         /**
@@ -12161,8 +12181,26 @@ namespace {
          *
          * @static 
          */
+        public static function audioUpload($name, $value = null, $options = array()){
+            return \Rutorika\Html\FormBuilder::audioUpload($name, $value, $options);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
         public static function fileUpload($name, $value = null, $options = array()){
             return \Rutorika\Html\FormBuilder::fileUpload($name, $value, $options);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function upload($template, $name, $value = null, $options = array()){
+            return \Rutorika\Html\FormBuilder::upload($template, $name, $value, $options);
         }
         
         /**
@@ -12181,18 +12219,6 @@ namespace {
          */
         public static function submitField($title = 'Submit'){
             return \Rutorika\Html\FormBuilder::submitField($title);
-        }
-        
-        /**
-         * Open up a new HTML form.
-         *
-         * @param array $options
-         * @return string 
-         * @static 
-         */
-        public static function open($options = array()){
-            //Method inherited from \Collective\Html\FormBuilder            
-            return \Rutorika\Html\FormBuilder::open($options);
         }
         
         /**
