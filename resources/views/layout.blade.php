@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="/vendor/rutorika/form/build/css/vendor.min.css">
-    <link rel="stylesheet" href="/vendor/rutorika/form/build/css/style.min.css">
+    <link rel="stylesheet" href="/vendor/rutorika/form/build/css/style.css">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <style>

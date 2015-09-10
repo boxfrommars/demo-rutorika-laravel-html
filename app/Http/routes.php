@@ -41,8 +41,8 @@ Route::get('/date', function () {
 Route::get('/upload-fields', function () {
     $article = new \App\Entities\Article();
     $article->title = 'Test Article';
-    $article->image = 'e4/81/bc974a89ae98787412fb74158b0e.png';
-    $article->file = 'e4/81/bc974a89ae98787412fb74158b0e.png';
+    $article->image = '';
+    $article->file = '';
 
     $article->imageHelp = '62/2e/0cae2ad0998d522117312b590583.jpg';
     $article->fileHelp = '62/2e/0cae2ad0998d522117312b590583.jpg';
