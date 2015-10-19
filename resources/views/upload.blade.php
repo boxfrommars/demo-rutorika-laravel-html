@@ -8,6 +8,7 @@
     {!! Form::fileField('File upload', 'file') !!}
 
     {!! Form::imageField('Image upload with help', 'imageHelp', null, [], 'JPG or PNG') !!}
+    {!! Form::imageUploadMultipleField('Multiple image upload', 'imageMultiple', null, [], 'JPG or PNG') !!}
     {!! Form::fileField('File upload with help', 'fileHelp', null, ['type' => 'document'], 'PDF, DOC, DOCX <= 3Mb') !!}
 
     {!! Form::audioField('Audio', 'audio', null, ['type' => 'audio'])  !!}
@@ -17,9 +18,16 @@
 
     <h4>Code</h4>
     <div class="code">@{!! Form::model($article) !!}
+@{!! Form::imageField('Image upload', 'image') !!}
+@{!! Form::fileField('File upload', 'file') !!}
 
-@{!! Form::imageField('Image upload', 'image', null, [], 'JPG or PNG') !!}
-@{!! Form::fileField('File upload', 'file', null, [], 'PDF, DOC, DOCX <= 3Mb') !!}
+@{!! Form::imageField('Image upload with help', 'imageHelp', null, [], 'JPG or PNG') !!}
+@{!! Form::imageUploadMultipleField('Multiple image upload', 'imageMultiple', null, [], 'JPG or PNG') !!}
+@{!! Form::fileField('File upload with help', 'fileHelp', null, ['type' => 'document'], 'PDF, DOC, DOCX <= 3Mb') !!}
 
-@{!! Form::close() !!}</div>
+@{!! Form::audioField('Audio', 'audio', null, ['type' => 'audio'])  !!}
+
+@{!! Form::submitField() !!}
+@{!! Form::close() !!}
+</div>
 @endsection

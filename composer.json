@@ -7,7 +7,7 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
-        "rutorika/laravel-html": "dev-upload",
+        "rutorika/laravel-html": "dev-master",
         "doctrine/dbal": "^2.5",
         "barryvdh/laravel-debugbar": "^2.0"
     },

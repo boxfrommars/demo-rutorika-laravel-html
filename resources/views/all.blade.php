@@ -21,6 +21,7 @@
     {!! Form::select2Field('Select2 Multiple', 'select2-multiple', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.'], null, ['multiple' => true]) !!}
 
     {!! Form::imageField('Image upload', 'image', 'e4/81/bc974a89ae98787412fb74158b0e.png') !!}
+    {!! Form::imageUploadMultipleField('Multiple image upload', 'imageMultiple', null, [], 'JPG or PNG') !!}
     {!! Form::fileField('File upload', 'file', 'e4/81/bc974a89ae98787412fb74158b0e.png') !!}
 
     {!! Form::codeField('Code', 'code') !!}
@@ -50,6 +51,7 @@
 @{!! Form::select2Field('Select2 Multiple', 'select2-multiple', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.'], null, ['multiple' => true]) !!}
 
 @{!! Form::imageField('Image upload', 'image', 'e4/81/bc974a89ae98787412fb74158b0e.png') !!}
+@{!! Form::imageUploadMultipleField('Multiple image upload', 'imageMultiple', null, [], 'JPG or PNG') !!}
 @{!! Form::fileField('File upload', 'file', 'e4/81/bc974a89ae98787412fb74158b0e.png') !!}
 
 @{!! Form::codeField('Code', 'code') !!}

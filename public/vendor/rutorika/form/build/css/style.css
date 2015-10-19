@@ -1,4 +1,4 @@
-.rk-upload-container .btn {
+.rk-upload-container .form-control-static .btn {
     display: inline-block;
     margin-right: 10px;
 }
@@ -9,6 +9,36 @@
 
     background-image: url(../img/background-pattern.png);
 }
+
+.rk-upload-container .thumb {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-position: center center;
+    background-size: cover;
+}
+.rk-upload-container .rk-upload-item {
+    float: left;
+    margin-right: 20px;
+}
+
+.rk-upload-preview a[href=""]
+{
+    display: none;
+}
+
+.rk-upload-preview .sortable-handle {
+    cursor: move;
+    background-color: #fff;
+    border-color: #ddd;
+    color: #bbb;
+}
+
+.rk-upload-preview .sortable-handle:hover {
+    cursor: move;
+    background-color: #eee;
+}
+
 
 .mfp-figure:after {
     background-image: url(../img/background-pattern.png);
@@ -28,12 +58,8 @@
     height:400px;
 }
 
-.rk-upload-preview a[href=""]
-{
-    display: none;
-}
-
 /* fix map controls over datetimepicker */
 .bootstrap-datetimepicker-widget {
     z-index: 1001;
 }
+
