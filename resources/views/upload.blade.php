@@ -11,7 +11,7 @@
     {!! Form::imageUploadMultipleField('Multiple image upload', 'imageMultiple', null, [], 'JPG or PNG') !!}
     {!! Form::fileField('File upload with help', 'fileHelp', null, ['type' => 'document'], 'PDF, DOC, DOCX <= 3Mb') !!}
 
-    {!! Form::audioField('Audio', 'audio', null, ['type' => 'audio'])  !!}
+    {!! Form::audioField('Audio', 'audio') !!}
 
     {!! Form::submitField() !!}
     {!! Form::close() !!}
@@ -25,7 +25,7 @@
 @{!! Form::imageUploadMultipleField('Multiple image upload', 'imageMultiple', null, [], 'JPG or PNG') !!}
 @{!! Form::fileField('File upload with help', 'fileHelp', null, ['type' => 'document'], 'PDF, DOC, DOCX <= 3Mb') !!}
 
-@{!! Form::audioField('Audio', 'audio', null, ['type' => 'audio'])  !!}
+@{!! Form::audioField('Audio', 'audio') !!}
 
 @{!! Form::submitField() !!}
 @{!! Form::close() !!}

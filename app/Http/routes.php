@@ -84,6 +84,7 @@ Route::post('/', function (\Illuminate\Http\Request $request) {
         'text' => 'required',
         'textarea' => 'required',
         'checkbox' => 'required',
+        'boolean' => 'required',
         'number' => 'required',
         'select' => 'required',
 

@@ -6,6 +6,7 @@
     {!! Form::open() !!}
     {!! Form::textField('Form::textField', 'textField', null, [], 'Should contains letters and numbers') !!}
     {!! Form::checkboxField('Form::checkboxField', 'checkboxField') !!}
+    {!! Form::booleanField('Boolean', 'boolean', 1, null, [], 'Sends 0 if has not checked') !!}
     {!! Form::numberField('Form::numberField', 'numberField') !!}
     {!! Form::selectField('selectField', 'selectField', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.']) !!}
     {!! Form::staticField('staticField', 'Submit form to display errors.') !!}
@@ -18,6 +19,7 @@
     {!! Form::textField('Form::textField', 'textField', null, [], 'Should contains letters and numbers') !!}
     {!! Form::textareaField('Form::textareaField', 'textareaField') !!}
     {!! Form::checkboxField('Form::checkboxField', 'checkboxField') !!}
+    {!! Form::booleanField('Boolean', 'boolean', 1, null, [], 'Sends 0 if has not checked') !!}
     {!! Form::numberField('Form::numberField', 'numberField') !!}
     {!! Form::selectField('selectField', 'selectField', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.']) !!}
     {!! Form::staticField('staticField', 'Submit form to display errors.') !!}
@@ -30,6 +32,7 @@
     {!! Form::textField('Form::textField', 'textField', null, [], 'Should contains letters and numbers') !!}
     {!! Form::textareaField('Form::textareaField', 'textareaField') !!}
     {!! Form::checkboxField('Form::checkboxField', 'checkboxField') !!}
+    {!! Form::booleanField('Boolean', 'boolean', 1, null, [], 'Sends 0 if has not checked') !!}
     {!! Form::numberField('Form::numberField', 'numberField') !!}
     {!! Form::selectField('selectField', 'selectField', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.']) !!}
     {!! Form::staticField('staticField', 'Submit form to display errors.') !!}
@@ -42,6 +45,7 @@
 @{!! Form::textField('Form::textField', 'textField') !!}
 @{!! Form::textField('Form::textField', 'textField', null, [], 'Should contains letters and numbers') !!}
 @{!! Form::checkboxField('Form::checkboxField', 'checkboxField') !!}
+@{!! Form::booleanField('Boolean', 'boolean', 1, null, [], 'Sends 0 if has not checked') !!}
 @{!! Form::numberField('Form::numberField', 'numberField') !!}
 @{!! Form::selectField('Form::selectField', 'selectField', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.']) !!}
 @{!! Form::staticField('Form::staticField', 'Submit form to display errors.') !!}
@@ -55,6 +59,7 @@
 @{!! Form::textField('Form::textField', 'textField') !!}
 @{!! Form::textField('Form::textField', 'textField', null, [], 'Should contains letters and numbers') !!}
 @{!! Form::checkboxField('Form::checkboxField', 'checkboxField') !!}
+@{!! Form::booleanField('Boolean', 'boolean', 1, null, [], 'Sends 0 if has not checked') !!}
 @{!! Form::numberField('Form::numberField', 'numberField') !!}
 @{!! Form::selectField('Form::selectField', 'selectField', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.']) !!}
 @{!! Form::staticField('Form::staticField', 'Submit form to display errors.') !!}
@@ -67,6 +72,7 @@
 
 @{!! Form::textField('Form::textField', 'textField') !!}
 @{!! Form::textField('Form::textField', 'textField', null, [], 'Should contains letters and numbers') !!}
+@{!! Form::booleanField('Boolean', 'boolean', 1, null, [], 'Sends 0 if has not checked') !!}
 @{!! Form::checkboxField('Form::checkboxField', 'checkboxField') !!}
 @{!! Form::numberField('Form::numberField', 'numberField') !!}
 @{!! Form::selectField('Form::selectField', 'selectField', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.']) !!}

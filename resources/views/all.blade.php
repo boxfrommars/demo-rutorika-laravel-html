@@ -7,6 +7,7 @@
     {!! Form::textField('Text', 'text') !!}
     {!! Form::checkboxField('Checkbox', 'checkbox') !!}
     {!! Form::numberField('Number', 'number') !!}
+    {!! Form::booleanField('Boolean', 'boolean', 1, null, [], 'Sends 0 if has not checked') !!}
     {!! Form::selectField('Select', 'select', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.']) !!}
 
     {!! Form::colorField('Color', 'color') !!}
@@ -25,6 +26,7 @@
     {!! Form::fileField('File upload', 'file', 'e4/81/bc974a89ae98787412fb74158b0e.png') !!}
 
     {!! Form::codeField('Code', 'code') !!}
+    {!! Form::audioField('Audio', 'audio') !!}
 
     {!! Form::staticField('Static', 'Submit form to display errors.') !!}
 
@@ -33,10 +35,10 @@
 
     <h4>Code</h4>
     <div class="code">@{!! Form::open() !!}
-
 @{!! Form::textField('Text', 'text') !!}
 @{!! Form::checkboxField('Checkbox', 'checkbox') !!}
 @{!! Form::numberField('Number', 'number') !!}
+@{!! Form::booleanField('Boolean', 'boolean', 1, null, [], 'Sends 0 if has not checked') !!}
 @{!! Form::selectField('Select', 'select', [4 => 'Something', 8 => 'Wicked', 15 => 'This', 16 => 'Way', 23 => 'Comes', 42 => '.']) !!}
 
 @{!! Form::colorField('Color', 'color') !!}
@@ -55,6 +57,7 @@
 @{!! Form::fileField('File upload', 'file', 'e4/81/bc974a89ae98787412fb74158b0e.png') !!}
 
 @{!! Form::codeField('Code', 'code') !!}
+@{!! Form::audioField('Audio', 'audio') !!}
 
 @{!! Form::staticField('Static', 'Submit form to display errors.') !!}
 
